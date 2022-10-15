@@ -1,15 +1,36 @@
-\documentclass[10pt,onecolumn,a4paper]{article}
+\documentclass[10pt,onecolumn,a5paper]{article}
 \usepackage{epsfig,graphicx,subfigure,amsthm,amsmath}
 \usepackage[font=tiny,labelfont=bf]{caption}
 \usepackage[top=15mm, bottom=15mm, left=15mm, right=18mm]{geometry}
 \usepackage{color,xcolor}
 \usepackage{authblk}
 \usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
 \usepackage{bidipoem}
 \usepackage[linktocpage=true,colorlinks,citecolor=blue,pagebackref=true]{hyperref}
+\usepackage{setspace}
+\doublespacing
 \usepackage{xepersian}
-\settextfont[Scale=1.2]{A Mashin Tahrir}
-\setlatintextfont[Scale=1]{Courier New Bold}
+
+% Change page numbering style
+\newcommand\docNo{171687}
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\footnotesize \thepage \hspace{1pt} از \pageref{LastPage} (\docNo)}
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{firststyle}
+{
+   \fancyhf{}
+   \fancyfoot[C]{\footnotesize \thepage\ از \pageref{LastPage} (\docNo)}
+   \renewcommand{\headrulewidth}{0pt} % removes horizontal header line
+}
+
+\settextfont[Scale=1]{IRNazanin}
+\setlatintextfont[Scale=0.8]{Doulos SIL}
+% \settextfont[Scale=1.2]{A Mashin Tahrir}
+% \setlatintextfont[Scale=1]{Courier New Bold}
+
 \setcounter{Maxaffil}{0}
 \renewcommand\Authands{ و }
 \renewcommand\Authand{ و }
