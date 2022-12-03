@@ -1,5 +1,6 @@
 \documentclass[12pt,onecolumn,a4paper]{article}
 \usepackage{epsfig,graphicx,subfigure,amsthm,amsmath}
+\usepackage{timestamp}
 \usepackage[font=large,labelfont=bf]{caption}
 \usepackage[top=15mm, bottom=15mm, left=15mm, right=18mm]{geometry}
 \usepackage{color,xcolor}
@@ -14,7 +15,7 @@
 \usepackage{xepersian}
 
 % Change page numbering style
-\newcommand\docNo{171687}
+\newcommand\docNo{\timestamp}
 \pagestyle{fancy}
 \fancyhf{}
 \cfoot{\footnotesize \thepage \hspace{1pt} از \pageref{LastPage} (\docNo)}
@@ -28,8 +29,6 @@
 
 \settextfont[Scale=1.2]{IRLotus}
 \setlatintextfont[Scale=1.1]{Doulos SIL}
-% \settextfont[Scale=1.2]{A Mashin Tahrir}
-% \setlatintextfont[Scale=1]{Courier New Bold}
 
 \setcounter{Maxaffil}{0}
 \renewcommand\Authands{ و }
@@ -43,6 +42,8 @@
     \affil[2]{وابستگی دوم \lr{Affiliation 2}}
     \date{۲ تیر ۱۳۸۱}
     \maketitle
+    
+    \thispagestyle{firststyle}
 
     \section{}
     یک بخش با شماره بدون عنوان\\
